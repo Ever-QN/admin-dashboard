@@ -1,9 +1,21 @@
-.grid-container {
+body {
+    font-family:'Roboto', Times, serif;
+}
+
+.container {
     display: grid;
     grid-template-areas: 
-    "nav header"
-    "nav main"
-    "nav main";
+    "nav header header"
+    "nav main main"
+    "nav main main";
+}
+
+.nav-container {
+    background-color: lightskyblue;
+}
+
+.nav-container h1{
+    color: white;
 }
 
 .nav {
@@ -14,8 +26,15 @@
     grid-area: header;
 }
 
-.main {
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-area: main;
+    background-color: lightgrey;
+}
+
+.project-items-container, .announcement-items-container, .trending-items-container {
+    background-color: white;
 }
 
 .nav {
